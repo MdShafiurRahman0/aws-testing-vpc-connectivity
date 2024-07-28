@@ -46,7 +46,6 @@ Get ready to:
 
 ![2024-07-27_12h48_24](https://github.com/user-attachments/assets/15316f1c-25ad-4c42-a3ed-19747eec9ac4)
 
-![2024-07-27_13h47_37](https://github.com/user-attachments/assets/0c46f96d-cb7c-40a2-a58f-195c8af78b30)
 
 
 
@@ -64,6 +63,9 @@ Get ready to:
 9. Select Save changes.
 
 To tidy up your network ACLs' naming conventions, let's also rename your VPC's default NACL to 
+
+
+![2024-07-27_13h47_37](https://github.com/user-attachments/assets/0c46f96d-cb7c-40a2-a58f-195c8af78b30)
 
 
 Observe the Inbound rules and Outbound rules tabs for your private network ACL.
@@ -172,7 +174,7 @@ For Security group name, let's use private server
 
 
 
-### Step 4 : Connect to NextWork Public Server
+# Step 4 : Connect to NextWork Public Server
 
 
 
@@ -219,7 +221,7 @@ For Security group name, let's use private server
 ![image](https://github.com/user-attachments/assets/d913ef36-7813-4053-baca-8a46ba52a6a8)
 
 
-### Test connectivity between your EC2 instances
+# Test connectivity between your EC2 instances
 
 
 
@@ -242,7 +244,7 @@ For Security group name, let's use private server
 
 1. Switch back to the EC2 Instance Connect tab.
 
-2.Run  ping google.com in terminal.
+2. Run ping google.com in terminal.
 
 
 ![image](https://github.com/user-attachments/assets/853b9962-3465-47fe-b008-4d2002a0f3d8)

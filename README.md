@@ -1,4 +1,4 @@
-### AWS Testing VPC Connectivity
+# AWS Testing VPC Connectivity
 
 
 Get ready to:
@@ -10,12 +10,12 @@ Get ready to:
 🛜 Test VPC connectivity with the internet.
 
 
-High Level Arcitecture Diagram
+# High Level Arcitecture Diagram
 
 ![image](https://github.com/user-attachments/assets/a97b647d-050f-451b-9218-6a773a2d3b67)
 
 
-### Step 1:  Set up your VPC basics:
+# Step 1:  Set up your VPC basics:
 
 ![image](https://github.com/user-attachments/assets/5f67e8c2-0b4e-4774-a247-a92f8d43b145)
 
@@ -29,7 +29,7 @@ High Level Arcitecture Diagram
 
 ![image](https://github.com/user-attachments/assets/73ab9383-7c36-4f9e-a1c7-757d7f2cfd2b)
 
-# Next, for the NAT gateways ($) option, make sure you've selected None. As the dollar sign suggests, NAT gateways cost money!
+# Next, for the NAT gateways ($) option, make sure you've selected None. 
 
 
 ![image](https://github.com/user-attachments/assets/05099395-8a66-4bc8-81bc-032251a5f7fd)
@@ -50,7 +50,7 @@ High Level Arcitecture Diagram
 
 
 
-### Step 2: Create Network ACLs
+# Step 2: Create Network ACLs
 
 1. Select Network ACLs from the left hand navigation panel.
 2. Select Create network ACL on the top right.
@@ -76,7 +76,7 @@ All inbound and outbound traffic is denied for your Private NACL!
 
 
 
-### Step 3:  Security Groups
+# Step 3:  Security Groups
 
 1. Select Security groups from the left hand navigation panel.
 2. Yay default security groups have already been set up for us! Their names are launch-wizard-1 and launch-wizard-2.
@@ -103,7 +103,7 @@ At the bottom of the screen, choose Create security group
 
 
 
-### Launch a new EC2 instance in NextWork Public Subnet
+# Launch a new EC2 instance in NextWork Public Subnet
 
 
 ![image](https://github.com/user-attachments/assets/6d11b8da-bdf3-4c0a-80b2-82b6b763a2b6)
@@ -132,13 +132,13 @@ At the bottom of the screen, choose Create security group
 
 
 
-###  NextWork Public Server's Networking details.
+#  NextWork Public Server's Networking details.
 
 
 ![image](https://github.com/user-attachments/assets/e4c72c5d-7583-4e13-bb3e-7a200901724c)
 
 
-### Launch a new EC2 instance in NextWork Private Subnet
+# Launch a new EC2 instance in NextWork Private Subnet
 
 
 ![image](https://github.com/user-attachments/assets/fe89f590-f0fa-447a-b95a-3c089f9ce1c1)
@@ -152,6 +152,8 @@ At the bottom of the screen, choose Create security group
 6. At the Network settings panel, select Edit.
 7. Network: NextWork VPC
 8. Subnet: NextWork Private Subnet
+
+
 
 # Select Create security group.
 For Security group name, let's use private server
@@ -239,6 +241,7 @@ For Security group name, let's use private server
 
 
 1. Switch back to the EC2 Instance Connect tab.
+
 2.Run  ping google.com in terminal.
 
 

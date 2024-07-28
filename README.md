@@ -216,3 +216,75 @@ For Security group name, let's use private server
 
 ![image](https://github.com/user-attachments/assets/d913ef36-7813-4053-baca-8a46ba52a6a8)
 
+
+### Test connectivity between your EC2 instances
+
+
+
+
+![image](https://github.com/user-attachments/assets/47e366dd-1dc3-436d-9b99-051d5282beac)
+
+
+
+1. Leave open the EC2 Instance Connect tab, but head back to your EC2 console in a new tab.
+2. Select NextWork Private Server.
+3. Copy your private server's Private IPv4 address.
+
+
+# Copy Private Server's private IPv4 address.
+
+
+
+![image](https://github.com/user-attachments/assets/19c58502-4343-43fb-bf75-189d539f20e5)
+
+
+1. Switch back to the EC2 Instance Connect tab.
+2.Run  ping google.com in terminal.
+
+
+![image](https://github.com/user-attachments/assets/853b9962-3465-47fe-b008-4d2002a0f3d8)
+
+# To resolve this connectivity error, let's investigate whether  Private Server is allowing in ICMP traffic.
+
+
+1. Let's resolve that by clicking on the link to your NextWork Private NACL.
+2. Select the checkbox next to NextWork Private NACL.
+3. Select the Inbound rules tab.
+4. Select Edit inbound rules.
+5. Let's add a new rule to let NextWork Public Server ping NextWork Private Server.
+6. Select Add new rule.
+7. Change the Type to All ICMP - IPv4.
+
+![image](https://github.com/user-attachments/assets/676ea3c5-90c9-4e68-953b-2a9f1e2b996f)
+
+
+
+1. Let's apply the same to Outbound rules.
+2. Rule number: 100
+3. Type: All ICMP - IPv4.
+4. Source: 10.0.0.0/24
+
+
+
+
+#### Select NextWork Private Security Group.
+
+
+1. Select Edit inbound rules.
+2. Select Add rule.
+3. For Type, select All ICMP - IPv4.
+4. For Source, select NextWork Public Security Group.
+
+![image](https://github.com/user-attachments/assets/500ff668-650c-4ab5-9854-22907a90901e)
+
+
+
+# Select Save rules.
+# Revisit the EC2 Instance Connect tab that's connected to NextWork Public Server.
+
+
+![image](https://github.com/user-attachments/assets/ef656e0f-6f76-47bc-8c49-7bd2436f531e)
+
+
+![image](https://github.com/user-attachments/assets/4c892746-8199-4d6a-ab19-44304fb55a2b)
+
